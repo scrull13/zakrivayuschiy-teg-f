@@ -13,4 +13,245 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  padding-block-start: 100px;
+  font-family: var(--main-font-family, "Inter", sans-serif);
+  font-variation-settings: "wght" var(--page-main-font-weight, 400);
+  background-image: var(--page-background-image);
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.header__page {
+  margin-block-end: 100px;
+}
+
+.header__title {
+  margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
+  margin-block-end: 20px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  margin-block-end: 120px;
+}
+
+.like-icon {
+  block-size: 36px;
+  inline-size: 39px;
+}
+
+.card {
+  margin-inline: auto;
+  border: 2px solid var(--text-color, #000000);
+  background: var(--page-background-color, #ffffff);
+  max-inline-size: 696px;
+}
+
+.card__header {
+  border-block-end: 2px solid var(--text-color, #000000);
+  padding: 5px 10px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: normal;
+  font-variation-settings: "wght" var(--headings-font-weight, 700);
+}
+
+.card__list {
+  display: grid;
+  gap: 50px;
+  background-color: var(--page-background-color);
+}
+
+.card__info {
+  display: grid;
+  border-block-start: 2px solid var(--color-black);
+  gap: 27px;
+  padding: 25px 25px;
+  line-height: calc(21 / 18);
+  font-size: 18px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  padding: 0 23px 23px 30px;
+  align-items: stretch;
+}
+
+.card__img {
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  object-position: center;
+  inline-size: 100%;
+}
+
+.card__icon-button {
+  display: grid;
+  border: 2px solid transparent;
+  padding: 0;
+  background: transparent;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.card__like-button {
+  position: relative;
+  border: 2px solid var(--text-color, #000000);
+  padding: 8px 38px 13px 36px;
+  font-family: var(--accent-font-family, "PressStart2P", fantasy);
+  font-size: 14px;
+  background: var(--page-background-color, #ffffff);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.card__wrapper {
+  position: relative;
+}
+
+.card__wrapper_label {
+  position: absolute;
+  font-size: 14px;
+  font-family: var(--accent-font-family, "PressStart2P", fantasy);
+  text-shadow: 0 0 1px var(--page-background-color);
+  inset-block-start: 24px;
+  inset-inline-end: 14px;
+  z-index: 1;
+}
+
+.button--save {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  position: relative;
+  border: 2px solid var(--text-color, #000000);
+  font-family: var(--accent-font-family, "PressStart2P", fantasy);
+  font-size: 14px;
+  background: var(--page-background-color, #ffffff);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.button__icon {
+  inline-size: 22px;
+  block-size: 22px;
+}
+
+.modal {
+  border: 2px solid var(--text-color, #000000);
+  padding: 25px 30px;
+  color: var(--text-color, #000000);
+  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  line-height: 1.5;
+  text-transform: uppercase;
+  background: var(--page-background-color, #ffffff);
+  max-inline-size: 355px;
+}
+
+.modal[open] {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px;
+}
+
+.modal::backdrop {
+  opacity: 0.75;
+  background: var(--color-black, #000000);
+}
+
+.modal__content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.modal__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 22px;
+}
+
+.modal__button {
+  inline-size: 100%;
+}
+
+.modal__button {
+  inline-size: 100%;
+  position: relative;
+  border: 2px solid var(--text-color, #000000);
+  padding: 8px 38px 13px 36px;
+  font-family: var(--accent-font-family, "PressStart2P", fantasy);
+  font-size: 14px;
+  background: var(--page-background-color, #ffffff);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  appearance: none;
+}
+
+.button--save::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--text-color, #000000);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.main {
+  display: grid;
+  justify-items: center;
+  gap: 49px;
+  padding-block-end: 100px;
+}
+
+@media (width > 375px) {
+  .card__list {
+    gap: 55px;
+  }
+
+  .header__title {
+    margin-block-start: clamp(6.5rem, 6.8rem + 1.5023vw, 8.5rem);
+  }
+
+  .header__subtitle {
+    margin-block-end: 126px;
+  }
+}
+
+@media (width < 375px) {
+  .modal {
+    padding: 28px 34px 28px 40px;
+    max-inline-size: 340px;
+  }
+
+  .button--save {
+    flex-direction: column;
+  }
+
+  .button__icon {
+    block-size: 28px;
+    inline-size: 28px;
+  }
 }
