@@ -191,10 +191,6 @@
 
 .modal__button {
   inline-size: 100%;
-}
-
-.modal__button {
-  inline-size: 100%;
   position: relative;
   border: 2px solid var(--text-color, #000000);
   padding: 8px 38px 13px 36px;
@@ -253,5 +249,15 @@
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
+  }
+}
+@supports (
+  (-webkit-text-stroke: 1px var(--page-background-color, #ffffff)) or
+    (text-stroke: 1px var(--page-background-color, #ffffff))
+) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
+    text-stroke: 1px var(--page-background-color, #ffffff);
   }
 }
