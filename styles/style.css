@@ -66,7 +66,7 @@
   font-variation-settings: "wght" var(--headings-font-weight, 700);
 }
 
-.card__list {
+.char__list {
   display: grid;
   gap: 50px;
   background-color: var(--page-background-color);
@@ -123,7 +123,7 @@
   position: relative;
 }
 
-.card__wrapper_label {
+.card__label {
   position: absolute;
   font-size: 14px;
   font-family: var(--accent-font-family, "PressStart2P", fantasy);
