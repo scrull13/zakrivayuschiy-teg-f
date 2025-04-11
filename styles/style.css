@@ -14,16 +14,16 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding-block-start: 100px;
-  font-family: var(--main-font-family, "Inter", sans-serif);
-  font-variation-settings: "wght" var(--page-main-font-weight, 400);
-  background-image: var(--page-background-image);
+  font-family: var(--main-font-family, "Inter"), sans-serif;
+  font-variation-settings: "wght" var(--main-font-weight, 400);
+  background-image: var(--background-primary);
 }
 
 .header {
   display: grid;
   justify-items: center;
   justify-content: center;
-  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -50,13 +50,13 @@
 
 .card {
   margin-inline: auto;
-  border: 2px solid var(--text-color, #000000);
-  background: var(--page-background-color, #ffffff);
+  border: 2px solid var(--text-color-primary);
+  background: var(--background-primary);
   max-inline-size: 696px;
 }
 
 .card__header {
-  border-block-end: 2px solid var(--text-color, #000000);
+  border-block-end: 2px solid var(--text-color-primary);
   padding: 5px 10px;
 }
 
@@ -66,17 +66,17 @@
   font-variation-settings: "wght" var(--headings-font-weight, 700);
 }
 
-.char__list {
+.card__list {
   display: grid;
   gap: 50px;
-  background-color: var(--page-background-color);
+  background-color: var(--background-primary);
 }
 
 .card__info {
   display: grid;
-  border-block-start: 2px solid var(--color-black);
+  border-block-start: 2px solid var(--text-color-primary);
   gap: 27px;
-  padding: 25px 25px;
+  padding: 29px 25px 25px 25px;
   line-height: calc(21 / 18);
   font-size: 18px;
 }
@@ -85,7 +85,7 @@
   display: flex;
   justify-content: end;
   gap: 5px;
-  padding: 0 23px 23px 30px;
+  padding: 0 20px 23px 30px;
   align-items: stretch;
 }
 
@@ -107,47 +107,90 @@
   appearance: none;
 }
 
-.card__like-button {
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--text-color-primary);
+}
+
+.button {
   position: relative;
-  border: 2px solid var(--text-color, #000000);
-  padding: 8px 38px 13px 36px;
-  font-family: var(--accent-font-family, "PressStart2P", fantasy);
+  z-index: 1;
+  border: 2px solid var(--text-color-primary);
+  padding: 10px 36px;
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   font-size: 14px;
-  background: var(--page-background-color, #ffffff);
-  transition: box-shadow 0.3s ease;
+  background: var(--background-primary);
+  color: var(--text-color-primary);
   cursor: pointer;
+  transition: color 0.3s ease;
   appearance: none;
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-base-black);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button:hover {
+  color: var(--text-color-inverse);
+}
+
+.button__text,
+.button__icon {
+  transition: color 0.3s ease;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0px 0px var(--text-color, #000000);
 }
 
 .card__wrapper {
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .card__label {
   position: absolute;
-  font-size: 14px;
-  font-family: var(--accent-font-family, "PressStart2P", fantasy);
-  text-shadow: 0 0 1px var(--page-background-color);
-  inset-block-start: 24px;
-  inset-inline-end: 14px;
   z-index: 1;
+  opacity: 0.5;
+  color: var(--text-color-primary);
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
+  font-size: 14px;
+  line-height: normal;
+  text-shadow: 0 0 1px var(--background-primary);
+  inset-inline-end: 24px;
+  inset-block-start: 24px;
+  mix-blend-mode: hard-light;
 }
 
-.button--save {
+.button__save {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 15px 20px;
-  position: relative;
-  border: 2px solid var(--text-color, #000000);
-  font-family: var(--accent-font-family, "PressStart2P", fantasy);
-  font-size: 14px;
-  background: var(--page-background-color, #ffffff);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  appearance: none;
 }
 
 .button__icon {
@@ -156,13 +199,13 @@
 }
 
 .modal {
-  border: 2px solid var(--text-color, #000000);
+  border: 2px solid var(--text-color-primary);
   padding: 25px 30px;
-  color: var(--text-color, #000000);
-  font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
+  color: var(--text-color-primary);
+  font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   line-height: 1.5;
   text-transform: uppercase;
-  background: var(--page-background-color, #ffffff);
+  background: var(--background-primary);
   max-inline-size: 355px;
 }
 
@@ -174,7 +217,7 @@
 
 .modal::backdrop {
   opacity: 0.75;
-  background: var(--color-black, #000000);
+  background: var(--text-color-primary);
 }
 
 .modal__content {
@@ -191,23 +234,14 @@
 
 .modal__button {
   inline-size: 100%;
-  position: relative;
-  border: 2px solid var(--text-color, #000000);
-  padding: 8px 38px 13px 36px;
-  font-family: var(--accent-font-family, "PressStart2P", fantasy);
-  font-size: 14px;
-  background: var(--page-background-color, #ffffff);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  appearance: none;
 }
 
-.button--save::before {
+.button__save::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: var(--text-color, #000000);
+  background: var(--text-color-primary);
   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
@@ -224,7 +258,8 @@
 
 @media (width > 375px) {
   .card__list {
-    gap: 55px;
+    display: grid;
+    gap: 50px;
   }
 
   .header__title {
@@ -242,7 +277,7 @@
     max-inline-size: 340px;
   }
 
-  .button--save {
+  .button__save {
     flex-direction: column;
   }
 
@@ -252,12 +287,12 @@
   }
 }
 @supports (
-  (-webkit-text-stroke: 1px var(--page-background-color, #ffffff)) or
-    (text-stroke: 1px var(--page-background-color, #ffffff))
+  (-webkit-text-stroke: 1px var(--background-primary)) or
+    (text-stroke: 1px var(--background-primary))
 ) {
   .card__label {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
-    text-stroke: 1px var(--page-background-color, #ffffff);
+    -webkit-text-stroke: 1px var(--background-primary);
+    text-stroke: 1px var(--background-primary);
   }
 }

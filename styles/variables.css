@@ -3,20 +3,20 @@
   --main-font-family: "Inter", sans-serif;
   --main-font-weight: 400;
   --accent-font-family: "PressStart2P", fantasy;
-
-  --color-black: #000000;
-  --color-white: #ffffff;
-
-  --page-background-color: var(--color-white);
-  --page-background-image: repeating-linear-gradient(
+  --color-base-black: #000000;
+  --color-base-white: #ffffff;
+  --text-color-primary: var(--color-base-black);
+  --text-color-inverse: var(--color-base-white);
+  --background-primary: var(--color-base-white);
+  --headings-font-weight: 700;
+  --main-font-weight: 400;
+  --background-pattern: repeating-linear-gradient(
       to left,
       #d3d3d3 0 2px,
       #d3d3d300 2px 4px
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-
-    --like-main-body-color: none;
-    --like-contour-color: var(--text-color, #000000);
-    --like-sparks-color: #ff0000;
+  --like-contour-default: var(--text-color-primary);
+  --like-accent-color: #ff0000;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="shortcut icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -14,7 +15,7 @@
   <body class="page">
     <header class="header card header__page">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
-      <h2 class="header__subtitle">закрывающий тег</h2>
+      <p class="header__subtitle">закрывающий тег</p>
     </header>
     <main class="main">
       <ul class="card__list">
@@ -25,22 +26,37 @@
                 Фритрек и нулевой спринт: Подготовка к работе
               </h2>
             </header>
-            <div class="card__wrapper">
-              <span class="card__label">&lt;Start?&gt;</span>
-              <img
-                src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2ZuaDcwMWphYnN2cDlheGdvcndpYWRrYTBxeG93ZG02ejd4aTU1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RKp3DW2ZwDlVS/giphy.gif"
-                alt="GIF: Lelouch"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+            <figure class="card__wrapper">
+              <span class="card__label">&lt;/HTML&gt;</span>
+              <picture>
+                <source
+                  srcset="
+                    https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2ZuaDcwMWphYnN2cDlheGdvcndpYWRrYTBxeG93ZG02ejd4aTU1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RKp3DW2ZwDlVS/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2ZuaDcwMWphYnN2cDlheGdvcndpYWRrYTBxeG93ZG02ejd4aTU1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RKp3DW2ZwDlVS/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2ZuaDcwMWphYnN2cDlheGdvcndpYWRrYTBxeG93ZG02ejd4aTU1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RKp3DW2ZwDlVS/giphy.gif"
+                  alt="Аниме-персонаж Лелуш из Code Geass с загадочной улыбкой. Камера медленно приближается к его лицу с яркими фиолетовыми глазами."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 Это было самое начало пути. На этом этапе важно было
                 проникнуться основами и настроиться на учёбу. И, возможно,
                 подумать, как новые знания могут повлиять на ваше будущее.
               </p>
               <p>Начало долгого погружение в это путешествие.</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -73,7 +89,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class=" button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -84,15 +100,30 @@
             <header class="card__header">
               <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             </header>
-            <div class="card__wrapper">
-              <span class="card__label">&lt;HELP&gt;</span>
-              <img
-                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNmenVpMDJ2a3F6enBtMTR5dGxiZGJyeXFpYzNxNG9oZzUwb2xjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KnuGX7IV6cnu0/giphy.gif"
-                alt="GIF: Ichigo"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+            <figure class="card__wrapper">
+              <span class="card__label">&lt;/HELP&gt;</span>
+              <picture>
+                <source
+                  srcset="
+                    https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNmenVpMDJ2a3F6enBtMTR5dGxiZGJyeXFpYzNxNG9oZzUwb2xjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KnuGX7IV6cnu0/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNmenVpMDJ2a3F6enBtMTR5dGxiZGJyeXFpYzNxNG9oZzUwb2xjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KnuGX7IV6cnu0/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajNmenVpMDJ2a3F6enBtMTR5dGxiZGJyeXFpYzNxNG9oZzUwb2xjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KnuGX7IV6cnu0/giphy.gif"
+                  alt="Ичиго Куросаки из аниме Блич стоит с мечом и смотрит вперёд, его волосы развеваются, на фоне фиолетовое небо."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 На первых этапах мы работали со страхами и сомнениями, которые
                 часто испытывают новички. Один из них — страх перед чистым
@@ -102,7 +133,7 @@
                 я не справлюсь?
               </p>
               <p>Разбираться в новом очень непросто</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -135,7 +166,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -146,22 +177,37 @@
             <header class="card__header">
               <h2 class="card__title">1 спринт: А если не получится?</h2>
             </header>
-            <div class="card__wrapper">
+            <figure class="card__wrapper">
               <span class="card__label">&lt;CSS&gt;</span>
-              <img
-                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmd0dXo1OTM2am9tcjZyMW5kbjNhaWpuOHRpamNtbWNxcmR6bnU5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C9p5OvcSFWrte/giphy.gif"
-                alt="GIF: Ulqiora"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+              <picture>
+                <source
+                  srcset="
+                    https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmd0dXo1OTM2am9tcjZyMW5kbjNhaWpuOHRpamNtbWNxcmR6bnU5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C9p5OvcSFWrte/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmd0dXo1OTM2am9tcjZyMW5kbjNhaWpuOHRpamNtbWNxcmR6bnU5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C9p5OvcSFWrte/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmd0dXo1OTM2am9tcjZyMW5kbjNhaWpuOHRpamNtbWNxcmR6bnU5ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/C9p5OvcSFWrte/giphy.gif"
+                  alt="Улькиорра Шиффер из Блич в своей второй форме превращения, с черными крыльями и светящимися глазами в ночной сцене."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 Первый проект — позади! Но это всё ещё самое начало пути.
                 Радость могла быстро померкнуть и смениться ожиданием провала.
                 Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
               </p>
               <p>Первый проект, было сложно. Пришлось попотеть</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -194,7 +240,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -205,15 +251,30 @@
             <header class="card__header">
               <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             </header>
-            <div class="card__wrapper">
+            <figure class="card__wrapper">
               <span class="card__label">&lt;desigions&gt;</span>
-              <img
-                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9sNGNzcHY1eHprdTJ5YnZud3V4MzBhMnJtdnJ1MjA0am5oOXZ1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hOBvQDpdO2brq/giphy.gif"
-                alt="GIF: Zuko"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+              <picture>
+                <source
+                  srcset="
+                    https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9sNGNzcHY1eHprdTJ5YnZud3V4MzBhMnJtdnJ1MjA0am5oOXZ1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hOBvQDpdO2brq/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9sNGNzcHY1eHprdTJ5YnZud3V4MzBhMnJtdnJ1MjA0am5oOXZ1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hOBvQDpdO2brq/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm9sNGNzcHY1eHprdTJ5YnZud3V4MzBhMnJtdnJ1MjA0am5oOXZ1MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hOBvQDpdO2brq/giphy.gif"
+                  alt="Зуко из Аватара: Легенда об Аанге бросает огонь. Фон тёмный, движение быстрое и динамичное, отражая напряжение сцены."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 На этом этапе вы уже достаточно разбирались в основах вёрстки,
                 чтобы понять, как много ещё впереди. Вы могли попытаться
@@ -222,7 +283,7 @@
                 сделать идеально, старались просто сделать.
               </p>
               <p>ААА, когда не получается всему успевать</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -255,7 +316,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -266,15 +327,30 @@
             <header class="card__header">
               <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             </header>
-            <div class="card__wrapper">
+            <figure class="card__wrapper">
               <span class="card__label">care</span>
-              <img
-                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVvdW51eGtteGowZmlpa2dlaGgxdTQ4bnVnN3VjYTFrN3hpaDQ1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DL2meIsHZQrbq/giphy.gif"
-                alt="GIF: Aang"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+              <picture>
+                <source
+                  srcset="
+                    https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVvdW51eGtteGowZmlpa2dlaGgxdTQ4bnVnN3VjYTFrN3hpaDQ1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DL2meIsHZQrbq/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVvdW51eGtteGowZmlpa2dlaGgxdTQ4bnVnN3VjYTFrN3hpaDQ1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DL2meIsHZQrbq/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVvdW51eGtteGowZmlpa2dlaGgxdTQ4bnVnN3VjYTFrN3hpaDQ1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DL2meIsHZQrbq/giphy.gif"
+                  alt="Аанг из Аватара в боевой стойке, с ярким светом вокруг и сосредоточенным выражением лица. Он использует магию воздуха."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 Всё это время вы были не одиноки (хотя, возможно, иногда и
                 чувствовали, что одни против целого мира). Вас окружали
@@ -284,7 +360,7 @@
                 единомышленники, не правда ли?
               </p>
               <p>Когда остался 1 на 1 с кодом и не справляешься</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -317,7 +393,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -328,22 +404,37 @@
             <header class="card__header">
               <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             </header>
-            <div class="card__wrapper">
+            <figure class="card__wrapper">
               <span class="card__label">&lt;support&gt;</span>
-              <img
-                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3VxM3E4Nmx1ZWs5amduaTVoZmgwZ3RxbmVlMXFqcHQ5MWszaDB6diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y2iqFF4t0Qdzi/giphy.gif"
-                alt="GIF: Zuko"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+              <picture>
+                <source
+                  srcset="
+                    https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3VxM3E4Nmx1ZWs5amduaTVoZmgwZ3RxbmVlMXFqcHQ5MWszaDB6diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y2iqFF4t0Qdzi/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3VxM3E4Nmx1ZWs5amduaTVoZmgwZ3RxbmVlMXFqcHQ5MWszaDB6diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y2iqFF4t0Qdzi/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3VxM3E4Nmx1ZWs5amduaTVoZmgwZ3RxbmVlMXFqcHQ5MWszaDB6diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y2iqFF4t0Qdzi/giphy.gif"
+                  alt="Зуко с серьезным лицом, в замедленном кадре кидает огонь в боевой сцене. Выражение лица напряженное и решительное."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 На этом курсе вы постоянно решали разные задачи. В какой-то
                 момент вам могло показаться, что решения просто иссякли. Значит,
                 пришло время посмотреть на задачу под другим углом.
               </p>
               <p>Очень сложный был спринт, пришлось взять перерыв</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -376,7 +467,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -387,15 +478,30 @@
             <header class="card__header">
               <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             </header>
-            <div class="card__wrapper">
+            <figure class="card__wrapper">
               <span class="card__label">&lt;lifes-style: none;&gt;</span>
-              <img
-                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGo0ZWZ0NnFybjhyY3plYmRoMTRva3J0eW1scXZmbXBhMnBxOWExNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fXsTOgADDa1QA/giphy.gif"
-                alt="GIF: ZUKO COOKED"
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+              <picture>
+                <source
+                  srcset="
+                    https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGo0ZWZ0NnFybjhyY3plYmRoMTRva3J0eW1scXZmbXBhMnBxOWExNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fXsTOgADDa1QA/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGo0ZWZ0NnFybjhyY3plYmRoMTRva3J0eW1scXZmbXBhMnBxOWExNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fXsTOgADDa1QA/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGo0ZWZ0NnFybjhyY3plYmRoMTRva3J0eW1scXZmbXBhMnBxOWExNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fXsTOgADDa1QA/giphy.gif"
+                  alt="Зуко выглядит подавленным и уставшим, на нём обгоревшая одежда, он сидит и тяжело дышит. Эмоциональный момент после сражения."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 Во время учёбы часто возникает чувство, когда не знаешь, за что
                 хвататься. Вроде и проектную <br />пора сдавать, и задачи
@@ -404,7 +510,7 @@
                 Вспомните, откуда вы её черпали.
               </p>
               <p>Эмоции Зуко it's literally me. Am i cooked?</p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -437,7 +543,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -448,15 +554,30 @@
             <header class="card__header">
               <h2 class="card__title">«Сейчас я здесь»</h2>
             </header>
-            <div class="card__wrapper">
+            <figure class="card__wrapper">
               <span class="card__label">&lt;experience&gt;</span>
-              <img
-                src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXcxemh4bGMwMnVmM2E2MjVjbHV3ZjJpemY5bzc4dGdyOWl5N3RoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NImQBT4pfi492/giphy.gif"
-                alt="GIF: zuko "
-                class="card__img"
-              />
-            </div>
-            <div class="card__info">
+              <picture>
+                <source
+                  srcset="
+                    https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXcxemh4bGMwMnVmM2E2MjVjbHV3ZjJpemY5bzc4dGdyOWl5N3RoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NImQBT4pfi492/giphy.webp
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXcxemh4bGMwMnVmM2E2MjVjbHV3ZjJpemY5bzc4dGdyOWl5N3RoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NImQBT4pfi492/giphy.avif
+                  "
+                  type="image/avif"
+                />
+                <img
+                  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXcxemh4bGMwMnVmM2E2MjVjbHV3ZjJpemY5bzc4dGdyOWl5N3RoMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NImQBT4pfi492/giphy.gif"
+                  alt="Зуко резко открывает глаза, его лицо освещено, видна эмоциональная реакция. Вероятно, момент осознания или страха."
+                  class="card__img"
+                  loading="lazy"
+                />
+              </picture>
+            </figure>
+            <figcaption class="card__info">
               <p>
                 Сейчас вы уже очень много знаете о вёрстке. Но это только
                 начало. Во-первых, впереди ещё много материала про «красотищу».
@@ -469,7 +590,7 @@
                 Все очень сложно, совмещать все очень трудно. Пытаюсь заставлять
                 себя делать все дальше
               </p>
-            </div>
+            </figcaption>
             <footer class="card__footer">
               <button type="button" class="card__icon-button">
                 <svg
@@ -502,7 +623,7 @@
                   />
                 </svg>
               </button>
-              <button type="button" class="card__like-button">
+              <button type="button" class="button card__like-button">
                 <span class="button__text">Like</span>
               </button>
             </footer>
@@ -513,7 +634,7 @@
         type="button"
         onclick="document.getElementById('modal').showModal();"
         aria-controls="modal"
-        class="button--save"
+        class=" button button__save"
       >
         <svg class="button__icon" viewBox="0 0 29 28">
           <use href="svg/floppy.svg#floppy" />
@@ -521,21 +642,19 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
-
     <dialog class="modal" id="modal">
       <div class="modal__content">
         <svg class="modal__icon" viewBox="0 0 29 28">
           <use href="svg/floppy.svg#floppy" />
         </svg>
-        <p>Вставьте дискету, чтобы продолжить</p>
+        <p>Вставьте дискету,чтобы продолжить</p>
       </div>
       <form method="dialog">
         <button type="submit" class="button modal__button">
-          <span class="button__text">ок</span>
+          <span class=" button__text">ок</span>
         </button>
       </form>
     </dialog>
-
     <script src="./scripts/like.js"></script>
   </body>
 </html>
