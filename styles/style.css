@@ -151,8 +151,6 @@
 
 .button__icon {
   transition: color 0.3s ease;
-  color: var(--text-color-inverse);
-  mix-blend-mode: difference;
   position: relative;
   z-index: 1;
   inline-size: 22px;
@@ -202,6 +200,7 @@
   align-items: center;
   gap: 10px;
   padding: 15px 20px;
+  mix-blend-mode: difference;
 }
 
 .modal {
