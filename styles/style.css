@@ -17,6 +17,7 @@
   font-family: var(--main-font-family, "Inter"), sans-serif;
   font-variation-settings: "wght" var(--main-font-weight, 400);
   background-image: var(--background-pattern);
+  background-attachment: fixed;
 }
 
 .header {
@@ -69,7 +70,6 @@
 .card__list {
   display: grid;
   gap: 50px;
-  background-color: var(--background-primary);
 }
 
 .card__info {
@@ -115,17 +115,6 @@
   border-color: var(--text-color-primary);
 }
 
-.card__icon-button .like-icon.is-liked {
-  fill: var(--color-accent-like, red); /* или другой переменной */
-  transition: fill 0.3s ease;
-}
-
-/* Ховер на уже лайкнутом сердечке */
-.card__icon-button:hover .like-icon.is-liked {
-  opacity: 0.8;
-  transform: scale(1.15);
-}
-
 .button {
   position: relative;
   z-index: 1;
@@ -156,17 +145,28 @@
   block-size: 100%;
 }
 
+.button:hover {
+  mix-blend-mode: difference;
+  border: 2px solid var(--text-color-primary);
+}
+
 .button:hover::before {
   transform: scaleX(1);
 }
 
-.button:hover {
-  color: var(--text-color-inverse);
-}
-
-.button__text,
 .button__icon {
   transition: color 0.3s ease;
+  color: var(--text-color-inverse);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+
+.button__text {
+  color: var(--text-color-inverse);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
 }
 
 .button:focus {
@@ -175,6 +175,7 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--text-color, #000000);
+  transition: 0.5s ease-in-out;
 }
 
 .card__wrapper {
@@ -213,7 +214,7 @@
 
 .modal {
   border: 2px solid var(--text-color-primary);
-  padding: 30px 40px;
+  padding: 30px;
   color: var(--text-color-primary);
   font-family: var(--accent-font-family, "PressStart2P"), fantasy;
   line-height: 1.5;

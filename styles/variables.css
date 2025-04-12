@@ -19,4 +19,5 @@
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --like-contour-default: var(--text-color-primary);
   --like-accent-color: #ff0000;
+  --like-main-body-color: none;
 }
