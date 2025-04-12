@@ -130,7 +130,6 @@
   overflow: hidden;
   width: 130px;
   text-align: center;
-
 }
 
 .button::before {
@@ -144,13 +143,10 @@
   transform-origin: left;
   inline-size: 100%;
   block-size: 100%;
-  
 }
-
 
 .button:hover::before {
   transform: scaleX(1);
-  
 }
 
 .button__icon {
@@ -158,14 +154,16 @@
   color: var(--text-color-inverse);
   mix-blend-mode: difference;
   position: relative;
-z-index: 1;
+  z-index: 1;
+  inline-size: 22px;
+  block-size: 22px;
 }
 
-.button__text{
+.button__text {
   color: var(--text-color-inverse);
   mix-blend-mode: difference;
   position: relative;
-z-index: 1;
+  z-index: 1;
 }
 
 .button:focus {
@@ -205,13 +203,6 @@ z-index: 1;
   gap: 10px;
   padding: 15px 20px;
 }
-
-.button__icon {
-  inline-size: 22px;
-  block-size: 22px;
-}
-
-
 
 .modal {
   border: 2px solid var(--text-color-primary);

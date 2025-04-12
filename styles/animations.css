@@ -76,14 +76,6 @@
   animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
 
-.like-icon.is-liked .core{
-  fill: var(--like-accent-color);
-}
-.like-icon.is-liked .main-body{
-  fill: var(--like-accent-color);
-}
-
-
 @keyframes heart {
   from {
     transform: scale(1);
